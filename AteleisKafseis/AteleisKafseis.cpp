@@ -7,18 +7,18 @@ int main()
 {
 	while (true)
 	{
-		int CO;
+		int CO, a, c, h;
+		double o;
 		cout << "Choose to proin ths atelhs kafshs 1. CO, 2. C " << endl;
 		cin >> CO;
 		if (CO == 1)
 		{
-			int a;
+
 			cout << "Choose ton desmo tvn carbons 1. single, 2. double, 3. triple " << endl;
 			cin >> a;
 			if (a == 1)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 0)
@@ -36,8 +36,7 @@ int main()
 			}
 			else if (a == 2)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -52,8 +51,7 @@ int main()
 			}
 			else if (a == 3)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -76,13 +74,12 @@ int main()
 		}
 		else if (CO == 2)
 		{
-			int a;
+
 			cout << "Choose ton desmo tvn carbons 1. single, 2. double, 3. triple " << endl;
 			cin >> a;
 			if (a == 1)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 0)
@@ -99,8 +96,7 @@ int main()
 			}
 			else if (a == 2)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -115,8 +111,7 @@ int main()
 			}
 			else if (a == 3)
 			{
-				int c, h;
-				double o;
+
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
