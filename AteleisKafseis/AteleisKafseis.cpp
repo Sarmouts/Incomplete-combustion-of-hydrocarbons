@@ -7,8 +7,8 @@ int main()
 {
 	while (true)
 	{
-		int CO, a, c, h;
-		double o;
+		int CO, a, c;
+		double o, h;
 		cout << "Choose to proin ths atelhs kafshs 1. CO, 2. C " << endl;
 		cin >> CO;
 		if (CO == 1)
