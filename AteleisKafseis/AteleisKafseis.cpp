@@ -2,9 +2,22 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
+
+string replace(int c)
+{
+	string str = "";
+	if (c != 1)
+	{
+		str += to_string(c);
+	}
+	return str;
+}
 int main()
 {
+	cout << "Welcome to MathFlare's c++ incomplete hydrocarbon combution calculator" << endl;
+	cout << "----------------------------------------------------------------------" << endl;
 	while (true)
 	{
 		int CO, a, c;
@@ -13,12 +26,10 @@ int main()
 		cin >> CO;
 		if (CO == 1)
 		{
-
-			cout << "Choose ton desmo tvn carbons 1. single, 2. double, 3. triple " << endl;
+			cout << "Choose the bond type of the carbons 1. single, 2. double, 3. triple" << endl;
 			cin >> a;
 			if (a == 1)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 0)
@@ -26,19 +37,15 @@ int main()
 					cout << "Please enter a valid value " << endl;
 					cout << "===========================================================================================" << endl;
 				}
-
 				else {
 					h = 2 * c + 2;
 					o = (h / 2 + c) / 2;
-					cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO" << endl;
+					cout << "H" << h << "C" << replace(c) << " + " << o << "O2 --> " << h / 2 << "H2O + " << replace(c) << "CO" << endl;
 					cout << "===========================================================================================" << endl;
 				}
-
-
 			}
 			else if (a == 2)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -55,7 +62,6 @@ int main()
 			}
 			else if (a == 3)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -70,22 +76,13 @@ int main()
 					cout << "===========================================================================================" << endl;
 				}
 			}
-
-
-
-
-
-
-
 		}
 		else if (CO == 2)
 		{
-
-			cout << "Choose ton desmo tvn carbons 1. single, 2. double, 3. triple " << endl;
+			cout << "Choose the bond type of the carbons 1. single, 2. double, 3. triple " << endl;
 			cin >> a;
 			if (a == 1)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 0)
@@ -96,15 +93,12 @@ int main()
 				else {
 					h = 2 * c + 2;
 					o = (h / 2) / 2;
-					cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "C" << endl;
+					cout << "H" << h << "C" << replace(c) << " + " << o << "O2 --> " << h / 2 << "H2O + " << replace(c) << "C" << endl;
 					cout << "===========================================================================================" << endl;
 				}
-
-
 			}
 			else if (a == 2)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -121,7 +115,6 @@ int main()
 			}
 			else if (a == 3)
 			{
-
 				cout << "Enter the number of carbons " << endl;
 				cin >> c;
 				if (c <= 1)
@@ -136,10 +129,6 @@ int main()
 					cout << "===========================================================================================" << endl;
 				}
 			}
-
-
 		}
-
-
 	}
 }
